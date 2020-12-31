@@ -1,0 +1,44 @@
+.layout{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.header-title{
+    color: white;
+    margin-left: -35px;
+}
+
+.ant-menu-item:hover, .ant-menu-item-active ,.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover {
+    color: white !important;
+}
+.ant-menu-item:hover {
+    color: black !important;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+    color: white !important
+}
+
+.header-servers{
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.header-link{
+    color: white;
+    margin-right: -35px;
+}
+
+.footer{
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
