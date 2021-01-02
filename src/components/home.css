@@ -13,7 +13,7 @@
 
 .header-title{
     color: white;
-    margin-left: -35px;
+    margin-left: 25px;
 }
 
 .ant-menu-item:hover, .ant-menu-item-active ,.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover {
@@ -41,4 +41,83 @@
     text-align: center;
     background-color: transparent;
     color: white;
+}
+
+
+.encabezado-header{
+    padding-top: .9em;
+    margin-bottom: .8em;
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    color: #BBADFF;
+    color: white;
+}
+
+.textos-header{
+    margin-top:1.7em;
+    color: #f2f2f2;
+}
+
+.btn-header{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    color: white;
+    background-color: rgba(241, 104, 118, 1);
+    border: 1px solid transparent;
+    transition: 1s;
+}
+
+.btn-header:hover{
+    border: 1px solid rgba(241, 104, 118, 1);
+    background-color: transparent;
+    color: rgba(241, 104, 118, 1);
+    transition: 1s;
+}
+
+.btn-header:focus {
+    box-shadow: 0 0 0 .1rem rgba(241, 104, 118, 1); 
+}
+
+.icon-check{
+    font-size: 1.2em;
+    margin-right: .5em;
+    color: lime;
+}
+
+.span-header{
+    color: coral;
+    color: deeppink;
+    color: #BBADFF;
+    color: #9B69D9;
+    color: rgba(241, 104, 118, 1);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.cards-section{
+    margin-top: 3em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    background-color: #f2f2f2;
+    
+}
+
+.cards-section__title{
+    color: grey;
+}
+.cards-info{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-page{
+    margin-left: 6em
 }

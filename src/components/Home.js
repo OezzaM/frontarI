@@ -1,83 +1,71 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
-import { Layout, Progress, Button, Menu } from 'antd';
-import { SettingOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
+import { Card } from 'antd';
+import { DatabaseTwoTone, DashboardTwoTone, RocketTwoTone } from '@ant-design/icons';
 import 'antd/dist/antd.css';
 import './home.css'
+import ReactTyped from 'react-typed';
 
 
 const Home = () => {
+    const { Meta } = Card;
+    return (
+        <div>
+            <div className="container-carousel">
+                <div className="container">
+                    <h3 className="text-center encabezado-header">
+                        <ReactTyped
+                            strings={["Contrata tu servidor de Counter Strike 1.6", "Contrata tu servidor de Counter Strike Global Offensive", "Contrata tu servidor de Farcry"]}
+                            typeSpeed={50}
+                            backSpeed={50}
+                            backDelay={1}
+                            loop
+                            smartBackspace
+                        />
+                    </h3>
+                    <h5 className="text-center textos-header"><i className="fas fa-check icon-check"></i>Impulsa tu negocio de la forma mas innovadora como lo es con un <span className="span-header">e-commerce.</span></h5>
+                    <h5 className="text-center textos-header"><i className="fas fa-check icon-check"></i>Diseñamos tu tienda online para que puedas vender a traves de la web.</h5>
+                    <h5 className="text-center textos-header"><i className="fas fa-check icon-check"></i>Ventas y envios <span className="span-header">seguros</span> proporcionados por Mercado Pago.</h5>
+                    <Link to="#!" style={{ textDecoration: 'none' }} ><button className="btn btn-header" >LEER MÁS</button></Link>
+                </div>
+            </div>
 
-    const { Header, Footer, Content } = Layout;
-    const { SubMenu } = Menu;
+            <div className="cards-section container">
+                <h1 className="text-center cards-section__title">¿Por qué elegirnos?</h1>
+                <div className="row cards-info ">
+                    <div className="col-md-4">
+                        <Card
+                            hoverable
+                            style={{ width: 240 }}
+                            cover={<DashboardTwoTone style={{ fontSize: '50px', marginTop: '.8em' }} />}
+                        >
+                            <Meta title="Europe Street beat" className="text-center" description="www.instagram.com" />
+                        </Card>
+                    </div>
+                    <div className="col-md-4">
 
-    const [current, setCurrent ] = useState('mail');
+                        <Card
+                            hoverable
+                            style={{ width: 240 }}
+                            cover={<DatabaseTwoTone style={{ fontSize: '50px', marginTop: '.8em' }} />}
+                        >
+                            <Meta title="Europe Street beat" className="text-center" description="www.instagram.com" />
+                        </Card>
+                    </div>
+                    <div className="col-md-4">
+                        <Card
+                            hoverable
+                            style={{ width: 240 }}
+                            cover={<RocketTwoTone style={{ fontSize: '50px', marginTop: '.8em' }} />}
+                        >
+                            <Meta title="Europe Street beat" className="text-center" description="www.instagram.com" />
+                        </Card>
+                    </div>
+                </div>
+            </div>
 
-    const handleClick = e => {
-        setCurrent( e.key );
-      };
-
-
-    useEffect(() => {
-        window.onscroll = function (){
-            if (window.pageYOffset > 0){
-                if (document.getElementById('header')){
-                    document.getElementById('header').style.height = '70px'
-                    document.getElementById('header').style.backgroundColor = '#f2f2f2'
-                    document.getElementById('header').style.transition = "height 1.2s, background-color 1.2s";
-                    if(document.getElementById('header-title')){
-                        document.getElementById('header-title').style.color = 'grey'
-                    }
-                    if (document.getElementById('header-link')){
-                        document.getElementById('header-link').style.color = 'grey'
-                    }
-                    if(document.getElementById('header-servers')){
-                        document.getElementById('header-servers').style.color = 'grey'
-                    }
-                    if(document.getElementById('hola')){
-                        document.getElementById('hola').style.color = 'grey'
-                    }
-                }
-            }else{
-                if(document.getElementById('header')){
-                    document.getElementById('header').style.height = '80px'
-                    document.getElementById('header').style.backgroundColor = 'transparent'
-                    document.getElementById('header').style.transition = "height 1.2s, background-color 1.2s";
-                    if(document.getElementById('header-title')){
-                        document.getElementById('header-title').style.color = 'white'
-                    }
-                    if (document.getElementById('header-link')){
-                        document.getElementById('header-link').style.color = 'white'
-                    }
-                    if(document.getElementById('header-servers')){
-                        document.getElementById('header-servers').style.color = 'white'
-                    }
-                    if(document.getElementById('hola')){
-                        document.getElementById('hola').style.color = 'white'
-                    }
-                }
-            }
-        }
-
-        let progressBar = document.getElementById('progress');
-        function ScrollProgressBar(){
-            let scrollTop =    document.documentElement.scrollTop;
-            let scrollHeight = document.documentElement.scrollHeight;
-            let clientHeight = document.documentElement.clientHeight;
-            
-            let windowHeight = scrollHeight - clientHeight;
-            let porcentaje = scrollTop / windowHeight * 100;
-
-            progressBar.style.width = porcentaje + '%';
-  }
-            window.addEventListener('scroll',  ScrollProgressBar);
-      
-    }, [])
-   
-    return ( 
-        <h1>Home</h1>
-
-     );
+        </div>
+    );
 }
- 
+
 export default Home;
