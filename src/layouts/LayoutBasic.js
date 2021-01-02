@@ -107,6 +107,9 @@ const LayoutBasic = ({ routes }) => {
             theme="dark"
             inlineCollapsed={collapsed}
         >
+            <Menu.Item key="0" icon={<ContainerOutlined />}>
+                <Link to="/">Home </Link>
+            </Menu.Item>
             <SubMenu key="sub1" icon={<MailOutlined />} title="Counter Strike">
                 <Menu.Item key="1"><Link to="/Counter-Strike">Counter Strike 1.6</Link></Menu.Item>
                 <Menu.Item key="2">Source</Menu.Item>
@@ -114,8 +117,8 @@ const LayoutBasic = ({ routes }) => {
                 <Menu.Item key="4"><Link to="/CS-GO">Counter Strike Global Offensive</Link></Menu.Item>
             </SubMenu>
             <Menu.Item key="5" icon={<ContainerOutlined />}>
-            <Link to="/Farcry">Farcry 3</Link>
-</Menu.Item>
+                <Link to="/Farcry">Farcry 3</Link>
+            </Menu.Item>
             <SubMenu key="sub2" icon={<MailOutlined />} title="MMORPG">
                 <Menu.Item key="6">Argentum Online</Menu.Item>
                 <Menu.Item key="7">Mu</Menu.Item>
