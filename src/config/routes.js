@@ -12,7 +12,7 @@ import Panel from '../components/Panel'; /*
 import Contacto from '../pages/Contacto'; */
 
 // Otras
-import Error404 from '../pages/Error404';
+import Error404 from '../shared/pages/Error404';
 import Csgo from '../components/Csgo';
 import Cs from '../components/Cs';
 import Farcry from '../components/Farcry';

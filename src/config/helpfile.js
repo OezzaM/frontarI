@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Switch, Route, Link } from "react-router-dom";
-import { Layout, Progress, Menu } from "antd";
+import { Layout, Progress, Button, Menu, Card } from "antd";
 import {
   DatabaseTwoTone,
   DashboardTwoTone,
   RocketTwoTone,
 } from "@ant-design/icons";
-import { Card, ListGroup, Button } from "react-bootstrap";
 import "antd/dist/antd.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Home.css";
@@ -51,39 +50,64 @@ const Home = () => {
           </Link>
         </div>
       </div>
+
       <div className="wrapper">
-        <h1 className="cards-section__title">¿Por qué elegirnos?</h1>
-        <ListGroup.Item className="border-0">
-          <Card className="card text-center">
-            <DatabaseTwoTone style={{ fontSize: "50px", marginTop: ".8em" }} />
-            <Card.Body>
-              <Card.Title>Basado en Cloud</Card.Title>
-              <Card.Text>
-                Aprovechando todos los beneficios de Cloud Computing, brindamos
-                el mejor servicio a nivel regional
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="card text-center">
-            <DashboardTwoTone style={{ fontSize: "50px", marginTop: ".8em" }} />
-            <Card.Body>
-              <Card.Title>Excelente rendimiento</Card.Title>
-              <Card.Text>
-                Aprovecha nuestra infraestructura para crear servidores a gusto
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="card text-center">
-            <RocketTwoTone style={{ fontSize: "50px", marginTop: ".8em" }} />
-            <Card.Body>
-              <Card.Title>Sin complicaciones</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </ListGroup.Item>
+        <h1 className="cards-section__title">
+          ¿Por qué elegirnos?
+        </h1>
+        <div className="cards-section">
+          <div className="col-md-4">
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={
+                <DashboardTwoTone
+                  style={{ fontSize: "50px", marginTop: ".8em" }}
+                />
+              }
+            >
+              <Meta
+                title="Excelente rendimiento"
+                className="text-center"
+                description="Aprovecha nuestra infraestructura para crear servidores a gusto"
+              />
+            </Card>
+          </div>
+          <div className="col-md-4">
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={
+                <DatabaseTwoTone
+                  style={{ fontSize: "50px", marginTop: ".8em" }}
+                />
+              }
+            >
+              <Meta
+                title="Basado en Cloud"
+                className="text-center"
+                description="Aprovechando todos los beneficios de Cloud Computing, brindamos el mejor servicio a nivel regional"
+              />
+            </Card>
+          </div>
+          <div className="col-md-4">
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={
+                <RocketTwoTone
+                  style={{ fontSize: "50px", marginTop: ".8em" }}
+                />
+              }
+            >
+              <Meta
+                title="Sin complicaciones"
+                className="text-center"
+                description="www.instagram.com"
+              />
+            </Card>
+          </div>
+        </div>
       </div>
     </div>
   );
