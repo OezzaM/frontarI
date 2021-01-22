@@ -1,4 +1,4 @@
-/* .layout {
+.layout {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -81,6 +81,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
+  margin-bottom: 3em;
   color: white;
   background-color: rgba(241, 104, 118, 1);
   border: 1px solid transparent;
@@ -115,6 +116,7 @@
 .cards-section__title {
   color: grey;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .list-group-item {
@@ -124,15 +126,28 @@
   display: flex;
   justify-content: space-evenly;
 }
-
+/* 
 .card {
   width: 20%;
   display: inline-block;
-}
+} */
 
 .wrapper {
   margin-top: 1rem;
   padding: 1rem 0;
-  height: auto;
+  background-color: #f2f2f2; /* 
+  display: flex; */
+}
+
+.container-cards {
   background-color: #f2f2f2;
-} */
+  padding-top: 3em;
+}
+
+.card {
+  margin-bottom: 1.5em !important;
+}
+
+.footer-text {
+  color: white;
+}
