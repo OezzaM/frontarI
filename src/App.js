@@ -11,6 +11,7 @@ import ServerInfo from "./games/CounterStrike16/pages/ServerInfo";
 import CounterStrike from "./games/CounterStrike16/pages/CounterStrike16";
 import { AuthContext } from "./shared/context/auth-context";
 import { useHttpClient } from "./shared/hooks/http-hook";
+import AuthForm from "./user/pages/AuthForm";
 import "./App.css";
 const App = () => {
   const { isLoading, error, sendRequest, clearError } = useHttpClient();
@@ -46,6 +47,9 @@ const App = () => {
         <Route path="/create" exact>
           <Formulario />
         </Route>
+        <Route path="/test" exact>
+          <AuthForm />
+        </Route>
         <Route path="/:serverId">
           <ServerInfo />
         </Route>
@@ -65,6 +69,9 @@ const App = () => {
         </Route>
         <Route path="/create" exact>
           <Formulario />
+        </Route>
+        <Route path="/test" exact>
+          <AuthForm />
         </Route>
         <Route path="/:serverId">
           <ServerInfo />

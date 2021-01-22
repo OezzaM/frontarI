@@ -88,6 +88,9 @@ const NavLinks = (props) => {
         <NavLink to="/servers" exact className="nav-link all-upper">
           Servidores
         </NavLink>
+        <NavLink to="/test" exact className="nav-link all-upper">
+          Auth
+        </NavLink>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="text-center">
           <Nav>

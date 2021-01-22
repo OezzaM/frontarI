@@ -9,7 +9,7 @@ const ServerItem = (props) => {
   return (
     <Card className="card text-center">
       <img
-        src="https://static2.cs-bg.net/maps/images/screenshots/maps16/de/cs-2021-de_mirage.jpg"
+        src={`https://storage.cloud.google.com/cs16_images/${props.map}`}
         alt="..."
         className="card-img-top"
       />

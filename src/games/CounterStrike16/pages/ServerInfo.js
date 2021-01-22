@@ -51,7 +51,7 @@ const ServerInfo = (props) => {
           <Card className="ServerInfo">
             <div className="imageServer">
               <img
-                src="https://static2.cs-bg.net/maps/images/screenshots/maps16/de/cs-2021-de_mirage.jpg"
+        src={`https://storage.cloud.google.com/cs16_images/${loadedServer.map}`}
                 alt="#"
                 className="pic"
               />
