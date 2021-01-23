@@ -7,4 +7,6 @@ export const API_ENDPOINT = {
   USER_INFO: API_URL + "api/users/login/success",
   USER_LOGIN: API_URL + "api/users/steam",
   USER_LOGOUT: API_URL + "api/users/logout",
+  USER_LOGINDB: API_URL + "api/users/login",
+  USER_SIGNUPDB: API_URL + "api/users/signup"
 };
