@@ -1,3 +1,64 @@
-.home{
-    padding: 1rem 0;
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.home {
+  padding: 1rem 0;
+}
+
+.cards-container {
+  background-color: #f2f2f2;
+  padding: 0 0 5em 0;
+}
+
+.cards-text {
+  text-align: center;
+  color: grey;
+  padding-bottom: 1em;
+}
+
+.btn-cards {
+  margin: 1em auto;
+}
+
+.hola {
+  width: 100%;
+}
+
+.container-prices {
+  margin-top: 3em;
+}
+
+h1 {
+  margin: 0 !important;
+}
+
+.card-body-price {
+  font-weight: bold;
+}
+
+.card:hover {
+  -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.85);
+  box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.85);
+  transition: 0.8s;
+}
+
+.card {
+  transition: 0.8s;
+}
+
+.container-preguntas-frecuentes {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.cards-preguntas-frecuentes {
+  padding: 0 !important;
+  margin: 0 !important;
 }
