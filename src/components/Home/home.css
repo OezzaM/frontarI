@@ -2,12 +2,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(
-    to top,
-    #1e3c72 0%,
-    #1e3c72 1%,
-    #2a5298 100%
-  );
 }
 
 .header {
@@ -146,8 +140,4 @@
 
 .card {
   margin-bottom: 1.5em !important;
-}
-
-.footer-text {
-  color: white;
 }

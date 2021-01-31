@@ -15,7 +15,7 @@ function exampleReducer(state, action) {
   }
 }
 
-const SidebarExampleTransitions = (props) => {
+const SidebarExampleTransitions = (props, collapsed) => {
   const [state, dispatch] = React.useReducer(exampleReducer, {
     animation: "overlay",
     direction: "left",

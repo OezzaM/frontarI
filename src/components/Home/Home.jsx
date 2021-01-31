@@ -95,9 +95,6 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-      <div class="container text-center p-4">
-        <p className="footer-text">Todos los derechos reservados. Octari 2021 &copy; </p>
-      </div>
   </div>
   );
 };
