@@ -1,8 +1,9 @@
 import React, { useState, useCallback } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home/";
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Sidebarr from "./components/Sidebar/Sidebar";
 import MainNavigation from "./shared/Navigation/MainNavigation";
 
 import ServersCreated from "./games/CounterStrike16/pages/ServersCreated";
@@ -14,7 +15,7 @@ import { AuthContext } from "./shared/context/auth-context";
 import { useHttpClient } from "./shared/hooks/http-hook";
 import AuthForm from "./user/pages/AuthForm";
 import "./App.css";
-import { Sidebar } from "semantic-ui-react";
+
 const App = () => {
   const { isLoading, error, sendRequest, clearError } = useHttpClient();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -92,8 +93,7 @@ const App = () => {
       }}
     >
       <Router>
-      <Header />
-        {routes}
+        <Header>{routes}</Header>
       </Router>
       <Footer />
     </AuthContext.Provider>

@@ -72,9 +72,7 @@ const AuthForm = () => {
             email: formState.inputs.email.value,
             password: formState.inputs.password.value,
           }),
-          {
-            "Content-Type": "application/json",
-          }
+          { "Content-Type": "application/json" }
         );
         auth.login(responseData.userId, responseData.token);
       } catch (err) {}
